@@ -1,0 +1,27 @@
+
+
+
+.sel table {
+    float: left;
+}
+
+.sel input[type=text] {
+    min-width: 220px;
+    width: 35%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: white;
+    /*background-image: url('C:\Users\ASUS\source\repos\e_pharm\searchicon.png');*/
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 12px 12px 12px;
+    margin-left: 5%;
+    margin-top: 5px;
+}
+
+.sel td button {
+    min-width: 150px;
+    margin-bottom: 10px;
+}

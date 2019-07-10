@@ -1,0 +1,139 @@
+
+#myInput {
+    box-sizing: border-box;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    border: 1.5px solid #43b7e9;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    margin-bottom: 12px;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 70%;
+    border: 1.5px solid #43b7e9;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 400px;
+    display: list-item;
+    overflow: auto;
+    float:right;
+    display: block;
+    margin-right:5%;
+}
+
+    #myTable th, #myTable td {
+        text-align: left;
+        padding: 12px;
+        display: inline-block;
+        position:relative;
+        height:auto;
+    }
+
+    #myTable tr {
+        border-bottom: 1.5px solid #43b7e9;
+    }
+
+        #myTable tr.header, #myTable tr:hover {
+            background-color: aquamarine;
+        }
+
+    #myTable #td1 {
+        width:40%;
+    }
+
+    #myTable #td2 {
+        width: 20%;
+    }
+/***************************** **************  Search *******************  ********************/
+.search input[type=text] {
+    box-sizing: border-box;
+    border: 1.5px solid #43b7e9;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+
+    margin-bottom:10px;
+}
+
+#column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    margin-top:0;
+    
+}
+/*  Responsive   */
+@media screen and (max-width: 500px) {
+    #column {
+        width: 100%;
+    }
+}
+/* Clearfix (clear floats) */
+#roww {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+ 
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+    font-family: Arial;
+}
+
+    .custom-select select {
+        display: none; /*hide original SELECT element:*/
+    }
+
+.select-selected {
+    background-color: white;
+}
+    /*style the arrow inside the select element:*/
+    .select-selected:after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        right: 0px;
+        width: 0;
+        height: 0;
+        border: 1px solid transparent;
+        border-color: #43b7e9;
+    }
+    /*point the arrow upwards when the select box is open (active):*/
+    .select-selected.select-arrow-active:after {
+        border-color:#43b7e9;
+        top: 7px;
+    }
+/*style the items (options), including the selected item:*/
+.select-items div, .select-selected {
+    color: #000;
+    padding: 12px 20px 12px 20px;
+    border: 1.5px solid #43b7e9;
+    border-color: #43b7e9;
+    cursor: pointer;
+    user-select: none;
+}
+/*style items (options):*/
+.select-items {
+    position: relative;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/****************/
